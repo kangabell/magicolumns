@@ -50,7 +50,7 @@ add_action( 'wp_enqueue_scripts', 'lwc_scripts');
         }
         add_shortcode( 'onethird_first', 'lwc_onethird_first' );
 
-        function twothirds_last_function( $atts, $content = null ) {
+        function lwc_twothirds_last( $atts, $content = null ) {
             return "<div class='last eightcol'>".do_shortcode($content)."</div></div>";
         }
         add_shortcode( 'twothirds_last', 'lwc_twothirds_last' );
