@@ -14,52 +14,52 @@ Author URI: http://kangabell.co
 
 /* LOAD STYLESHEET */
 
-function lightweight_columns_scripts() {
-    wp_enqueue_style( 'lightweight-columns-css', plugins_url( 'style.css', __FILE__ ) );
+function lwc_scripts() {
+    wp_enqueue_style( 'lwc-css', plugins_url( 'style.css', __FILE__ ) );
 }
 
-add_action( 'wp_enqueue_scripts', 'lightweight_columns_scripts');
+add_action( 'wp_enqueue_scripts', 'lwc_scripts');
 
 /* HALF COLUMNS */
-    function half_first_function( $atts, $content = null ) {
-        return "<div class='lightweight-columns'><div class='first sixcol'>".do_shortcode($content)."</div>";
+    function lwc_half_first( $atts, $content = null ) {
+        return "<div class='lwc'><div class='first sixcol'>".do_shortcode($content)."</div>";
     }
-    add_shortcode( 'half_first', 'half_first_function' );
+    add_shortcode( 'half_first', 'lwc_half_first' );
 
-    function half_last_function( $atts, $content = null ) {
+    function lwc_half_last( $atts, $content = null ) {
         return "<div class='last sixcol'>".do_shortcode($content)."</div></div>";
     }
-    add_shortcode( 'half_last', 'half_last_function' );
+    add_shortcode( 'half_last', 'lwc_half_last' );
 
 /* THIRDS COLUMNS */
 
     /* 2/3 left, 1/3 right */
-        function twothirds_first_function( $atts, $content = null ) {
-            return "<div class='lightweight-columns'><div class='first eightcol'>".do_shortcode($content)."</div>";
+        function lwc_twothirds_first( $atts, $content = null ) {
+            return "<div class='lwc'><div class='first eightcol'>".do_shortcode($content)."</div>";
         }
-        add_shortcode( 'twothirds_first', 'twothirds_first_function' );
+        add_shortcode( 'twothirds_first', 'lwc_twothirds_first' );
 
-        function onethird_last_function( $atts, $content = null ) {
+        function lwc_onethird_last( $atts, $content = null ) {
             return "<div class='last fourcol'>".do_shortcode($content)."</div></div>";
         }
-        add_shortcode( 'onethird_last', 'onethird_last_function' );
+        add_shortcode( 'onethird_last', 'lwc_onethird_last' );
 
     /* 1/3 left, 2/3 right */
-        function onethird_first_function( $atts, $content = null ) {
-            return "<div class='lightweight-columns'><div class='first fourcol'>".do_shortcode($content)."</div>";
+        function lwc_onethird_first( $atts, $content = null ) {
+            return "<div class='lwc'><div class='first fourcol'>".do_shortcode($content)."</div>";
         }
-        add_shortcode( 'onethird_first', 'onethird_first_function' );
+        add_shortcode( 'onethird_first', 'lwc_onethird_first' );
 
         function twothirds_last_function( $atts, $content = null ) {
             return "<div class='last eightcol'>".do_shortcode($content)."</div></div>";
         }
-        add_shortcode( 'twothirds_last', 'twothirds_last_function' );
+        add_shortcode( 'twothirds_last', 'lwc_twothirds_last' );
 
 /* THREE FLOWING COLUMNS */
-    function threecolumns_function( $atts, $content = null ) {
-        return "<div class='lightweight-columns'><div class='threecolumns'>".do_shortcode($content)."</div></div>";
+    function lwc_threecolumns( $atts, $content = null ) {
+        return "<div class='lwc'><div class='threecolumns'>".do_shortcode($content)."</div></div>";
     }
-    add_shortcode( 'threecolumns', 'threecolumns_function' );
+    add_shortcode( 'threecolumns', 'lwc_threecolumns' );
 
 
 ?>
