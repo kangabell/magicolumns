@@ -8,15 +8,15 @@ Stylesheet: Stylesheet for Lightweight Columns plugin
 @media only screen and (min-width: 768px) {
 
 	/* Container for clearing things */
-	
-	div.columns {
+
+	.lightweight-columns {
 		overflow: auto;
 		width: 100%;
 	}
 
 	/* Flowing Three-Column layout */
 
-	.threecolumns {
+	.lightweight-columns .threecolumns {
 		-webkit-column-count: 3;
 		-moz-column-count: 3;
 		column-count: 3;
@@ -24,23 +24,23 @@ Stylesheet: Stylesheet for Lightweight Columns plugin
 		-moz-column-gap: 2em;
 		column-gap: 2em;
 	}
-	.threecolumns p:first-child {
+	.lightweight-columns .threecolumns p:first-child {
 		margin-top: 0;
 	}
 
 	/* Column sizes */
 
-	.fourcol   { width: 30.75%; }
-	.sixcol    { width: 48%; }
-	.eightcol  { width: 65.4%; }
+	.lightweight-columns .fourcol   { width: 30.75%; }
+	.lightweight-columns .sixcol    { width: 48%; }
+	.lightweight-columns .eightcol  { width: 65.4%; }
 
-	.fourcol, .sixcol, .eightcol {
+	.lightweight-columns div {
 	  position: relative;
 	  float: left;
 	  margin-left: 3.762431%;
 	}
 
-	.first {
+	.lightweight-columns div.first {
 	  margin-left: 0;
 	}
 
