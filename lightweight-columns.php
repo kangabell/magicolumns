@@ -12,6 +12,15 @@ Version: 1.0
 Author URI: http://kangabell.co
 */
 
+/* LOAD STYLESHEET */
+
+function lightweight_columns_scripts() {
+    wp_enqueue_style( 'lightweight-columns-css', plugins_url( 'style.css', __FILE__ ) );
+}
+
+add_action( 'wp_enqueue_scripts', 'lightweight_columns_scripts');
+
+
 /* HALF COLUMNS */
     function half_first_function( $atts, $content = null ) {
         return "<div class='columns'><div class='sixcol first'>".do_shortcode($content)."</div>";
