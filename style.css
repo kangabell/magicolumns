@@ -5,6 +5,10 @@ Stylesheet: Stylesheet for Lightweight Columns plugin
 ******************************************************************/
 
 
+.lightweight-columns div + div {
+	margin-top: 0.5em;
+}
+
 @media only screen and (min-width: 768px) {
 
 	/* Container for clearing things */
@@ -42,6 +46,10 @@ Stylesheet: Stylesheet for Lightweight Columns plugin
 
 	.lightweight-columns div.first {
 	  margin-left: 0;
+	}
+
+	.lightweight-columns div + div  {
+		margin-top: 0;
 	}
 
 } /* end media query */
