@@ -5,60 +5,36 @@ Stylesheet: Stylesheet for Lightweight Columns plugin
 ******************************************************************/
 
 
-
-/********* BASE STYLESHEET ***************************************/
-
-
-
-/********* 481px+ STYLES *****************************************/
-
-@media only screen and (min-width: 481px) {
-	html {
-		height: 101%; /* force vertical scrollbar for horizontal consistency */
-	}
-	.alignleft, img.alignleft { 
-		margin-right: 1.125em; 
-		display: inline; 
-		float: left;
-	}
-	.alignright, img.alignright { 
-		margin-left: 1.5em; 
-		display: inline; 
-		float: right;
-	}
-	.aligncenter, img.aligncenter { 
-		margin-right: auto; 
-		margin-left: auto; 
-		display: block; 
-		clear: both; 
-	}
-	.social .button {
-		padding: 0.25em 0.5em;
-		width: auto;
-		float: left;
-		.text {
-			visibility: visible;
-		}
-	}
-} /* end media query */
-
-/********* 768px+ STYLESHEET *************************************/
-
 @media only screen and (min-width: 768px) {
-	.onecol    { width: 4.85%;  }
-	.twocol    { width: 13.45%; }
-	.threecol  { width: 22.05%; }
-	.fourcol   { width: 30.75%; }
-	.fivecol   { width: 39.45%; }
-	.sixcol    { width: 48%; }
-	.sevencol  { width: 56.75%; }
-	.eightcol  { width: 65.4%; }
-	.ninecol   { width: 74.05%; }
-	.tencol    { width: 82.7%; }
-	.elevencol { width: 91.35%; }
-	.twelvecol { width: 100%; }
 
-	.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+	/* Container for clearing things */
+	
+	div.columns {
+		overflow: auto;
+		width: 100%;
+	}
+
+	/* Flowing Three-Column layout */
+
+	.threecolumns {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+		-webkit-column-gap: 2em;
+		-moz-column-gap: 2em;
+		column-gap: 2em;
+	}
+	.threecolumns p:first-child {
+		margin-top: 0;
+	}
+
+	/* Column sizes */
+
+	.fourcol   { width: 30.75%; }
+	.sixcol    { width: 48%; }
+	.eightcol  { width: 65.4%; }
+
+	.fourcol, .sixcol, .eightcol {
 	  position: relative;
 	  float: left;
 	  margin-left: 3.762431%;
@@ -68,19 +44,5 @@ Stylesheet: Stylesheet for Lightweight Columns plugin
 	  margin-left: 0;
 	}
 
-	/* container for clearing things */
-	div.columns {
-		overflow: auto;
-		width: 100%;
-	}
-
-	/* Flowing Three-Column layout */
-	.threecolumns {
-		@include column-count(3);
-		@include column-gap(2em);
-		p:first-child {
-			margin-top: 0;
-		}
-	}
 } /* end media query */
 
