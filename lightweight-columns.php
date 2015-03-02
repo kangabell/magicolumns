@@ -15,7 +15,7 @@ Author URI: http://kangabell.co
 /* LOAD STYLESHEET */
 
 function lwc_scripts() {
-    wp_enqueue_style( 'lwc-css', plugins_url( 'style.css', __FILE__ ) );
+    wp_enqueue_style( 'lwc-css', plugins_url( 'style.min.css', __FILE__ ) );
 }
 
 add_action( 'wp_enqueue_scripts', 'lwc_scripts');
