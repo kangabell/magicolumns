@@ -38,6 +38,7 @@ add_shortcode( 'threecolumns', 'lwc_threecolumns' );
 
 function lwc_scripts() {
     wp_enqueue_style( 'lwc-css', plugins_url( 'style.min.css', __FILE__ ) );
+    wp_enqueue_script('lwc-js', plugins_url( 'scripts.js', __FILE__ ), array('jquery'), null, true);
 }
 
 function lwc_half_first( $atts, $content = null ) {
