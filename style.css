@@ -4,17 +4,23 @@ Stylesheet: Stylesheet for Lightweight Columns plugin
 
 ******************************************************************/
 
-/*@media only screen and (min-width: 768px) {*/
 
-	div.fbg {
-		align-items: start;
+.mgc > div + div {
+	margin-top: 0.5em;
+}
+
+@media only screen and (min-width: 768px) {
+
+
+	div.mgc {
 		display: flex;
-		flex-wrap: wrap;
 	}
-	div.fbg > * {
-		flex-grow: 1;
+	div.mgc > div {
 		padding: 12px;
 	}
+	.mgc > div + div  {
+		margin-top: 0;
+	}
 
-/*}*/
+}
 

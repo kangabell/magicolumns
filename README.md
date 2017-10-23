@@ -1,31 +1,15 @@
-#Lightweight Columns
+# Magicolumns!
 
-WordPress shortcodes for simple, responsive columns. Includes thirds, halves, and three-column flowing text.
+Columns of text that stretch to fit, with easy-to-use shortcodes, for WordPress.
 
-No installation needed. Just jump right in to using the shortcodes in the page/post editor.
-These shortcodes work in pairs, so be sure to use the couples together in the proper way. Do not "mix-and-match".
+Easy to use and set up. After installing the plugin you can jump right in to using the shortcodes in the page/post editor.
 
-##Shortcodes
+Wrap around a region of text to create a container:
+`[mgc][/mgc]`
 
+Wrap around each element you'd like to be a column:
+`[col][/col]`
 
-![Lightweight Columns Halves](assets/screenshot-1.png)
-`[half_first][/half_first]`
+This plugin creates a responsive layout. At small sizes (e.g. phones) the layout defaults to your theme's styles. The Magicolumns kick in at medium or larger sizes (tablets, laptops, desktops, etc).
 
-`[half_last][/half_last]`
-
-
-![Lightweight Columns 2/3 + 1/3](assets/screenshot-2.png)
-`[twothirds_first][/twothirds_first]`
-
-`[onethird_last][/onethird_last]`
-
-
-
-![Lightweight Columns 1/3 + 2/3](assets/screenshot-3.png)
-`[onethird_first][/onethird_first]`
-
-`[twothirds_last][/twothirds_last]`
-
-
-![Lightweight Columns Three-Column Flowing](assets/screenshot-4.png)
-`[threecolumns][/threecolumns]`
+_Not recommended for use with fixed-layout (not responsive) themes._

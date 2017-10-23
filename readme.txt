@@ -1,41 +1,24 @@
-=== Lightweight Columns ===
+=== Magicolumns ===
 Contributors: kangabell
 Tags: columns, shortcode, responsive
-Tested up to: 4.1.1
+Tested up to: 4.8.2
 License: GPL
 License URI: http://www.gnu.org/licenses/gpl.html
 
-Shortcodes for simple, responsive columns.
-
 == Description ==
-Shortcodes for simple, responsive columns. Includes thirds, halves, and three-column flowing text.
+Columns of text that stretch to fit, with easy-to-use shortcodes.
 
 == Installation ==
-No installation needed. Just jump right in to using the shortcodes in the page/post editor.
-These shortcodes work in pairs, so be sure to use the couples together in the proper way. Do not "mix-and-match".
+Easy to use and set up. After installing the plugin you can jump right in to using the shortcodes in the page/post editor.
 
-== Screenshots ==
-1. Halves
-2. One Third + Two Thirds
-3. Two Thirds + One Third
-4. Three-Column Flowing
+This plugin creates a responsive layout. At small sizes (e.g. phones) the layout defaults to your theme's styles. The Magicolumns kick in at medium or larger sizes (tablets, laptops, desktops, etc).
+
+Not recommended for use with fixed-layout (not responsive) themes.
 
 == Shortcodes ==
 
-/* 1/2 */
-[half_first][/half_first]
+Wrap around a region of text to create a container:
+[mgc][/mgc]
 
-[half_last][/half_last]
-
-/* 2/3 left, 1/3 right */
-[twothirds_first][/twothirds_first]
-
-[onethird_last][/onethird_last]
-
-/* 1/3 left, 2/3 right */
-[onethird_first][/onethird_first]
-
-[twothirds_last][/twothirds_last]
-
-/* 3 flowing columns */
-[threecolumns][/threecolumns]
+Wrap around each element you'd like to be a column:
+[col][/col]
