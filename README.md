@@ -13,3 +13,7 @@ Wrap around each element you'd like to be a column:
 This plugin creates a responsive layout. At small sizes (e.g. phones) the layout defaults to your theme's styles. The Magicolumns kick in at medium or larger sizes (tablets, laptops, desktops, etc).
 
 _Not recommended for use with fixed-layout (not responsive) themes._
+
+![Screenshot of columns](assets/screenshot-1.png)
+![Screenshot of columns](assets/screenshot-2.png)
+![Screenshot of columns](assets/screenshot-3.png)

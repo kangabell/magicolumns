@@ -15,6 +15,11 @@ This plugin creates a responsive layout. At small sizes (e.g. phones) the layout
 
 Not recommended for use with fixed-layout (not responsive) themes.
 
+== Screenshots ==
+1.
+2.
+3.
+
 == Shortcodes ==
 
 Wrap around a region of text to create a container:

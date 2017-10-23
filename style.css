@@ -4,8 +4,11 @@ Stylesheet: Stylesheet for Lightweight Columns plugin
 
 ******************************************************************/
 
+div.mgc + div.mgc {
+	margin-top: 2rem;
+}
 
-.mgc > div + div {
+div.mgc > div + div {
 	margin-top: 0.5em;
 }
 
@@ -18,7 +21,7 @@ Stylesheet: Stylesheet for Lightweight Columns plugin
 	div.mgc > div {
 		padding: 12px;
 	}
-	.mgc > div + div  {
+	div.mgc > div + div  {
 		margin-top: 0;
 	}
 
